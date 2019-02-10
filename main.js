@@ -1,6 +1,8 @@
 var btns = document.querySelectorAll('.thumbs > .thumb > a');
 var img = document.getElementsByClassName('images')[0];
 
+btns[0].classList.add('active');
+
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function(e) {
     img.style.transform = 'translateX(-' + i * 920 + 'px)';
